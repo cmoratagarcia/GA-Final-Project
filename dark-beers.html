@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LBE - Dark Beers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' href='https://necolas.github.io/normalize.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/062c3de4d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+
+        <!--Header-->
+        <header class="nav-container">
+            <section class="nav-left">
+                <img class="lbe-logo-text" src="LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo">
+            </section>
+            <section class="mobile-nav">
+                <div class="hamburger-menu-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
+                <div class="logo-container"><img class="lbe-logo-no-text" src="LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2">
+                </div>
+            </section>
+
+            <section class="nav-center">
+                <a class="nav-link" href="./index.html">Home</a>
+                <div class="dropdown" id="beer-dropdown">
+                    <a class="nav-link" href="#">Beers <i class="fas fa-angle-down"></i></a>
+                    <!--Dropdowns-->
+                    <aside class="dropdown-menu" id="beer-menu">
+                        <ul class="menu-item-list">
+                            <li><a href="./dark-beers.html">Dark</a></li>
+                            <li><a href="#">Light</a></li>
+                            <li><a href="#">Hoppy</a></li>
+                            <li><a href="#">Other</a></li>
+                            <li><a href="#">Search</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="dropdown" id="breweries-dropdown">
+                    <a class="nav-link" href="#">Breweries <i class="fas fa-angle-down"></i></a>
+                    <aside class="dropdown-menu" id="breweries-menu">
+                        <ul class="menu-item-list">
+                            <li><a href="#">Near Me</a></li>
+                            <li><a href="#">Map</a></li>
+                            <li><a href="#">Search</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <a class="nav-link" href="#">Expeditions</a>
+            </section>
+
+            <section class="nav-right">
+                <div class="dropdown" id="sign-in-dropdown">
+                    <a class="nav-link" href="#">Sign in <i class="fas fa-angle-down"></i></a>
+                    <aside class="dropdown-menu" id="sign-in-menu">
+                        <ul class="menu-item-list">
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Create Account</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+        </header>
+
+        <!--Beer Cards-->
+        <section class="beer-cards-box">
+            <div class="beers-top-content">
+                <h2>Dark Beers</h2>
+                <hr>
+                <div class="filter-buttons">
+                    <div class="filter-btn">Filter <i class='fa fa-filter'></i></div>
+                    <div class="sort-btn">Sort <i class="fas fa-sort"></i></div>
+                </div>
+            </div>
+
+            <div class="beer-cards-container">
+                <!--Card 1 - Faculty-->
+                <div class="beer-card desktop-beer-card">
+                    <img class="beer-pic" src="LBE-Assets/faculty-oaked-stout-thumb.png" alt="710">
+                    <div class="beer-card-center-content">
+                        <h1>710 Oaked Stout</h1>
+                        <p>A dry stout with a creamy oatmeal head. The roasted barley offers notes of coffee, while the American oak provides aromas of vanilla and wood.</p>
+                        <div class="bottom-options">
+                            <p class="save-button"><i class="far fa-regular fa-star"></i> Save</p>
+                            <p class="more-button"><i class="fas fa-plus"></i> More like this</p>
+                        </div>
+                    </div>
+                    <div class="beer-card-details">
+                        <p><a href="https://www.facultybrewing.com"><i class="far fa-regular fa-compass"></i> Faculty Brewing</a></p>
+                        <p><strong> Alcohol Content</strong>: 5% ABV</p>
+                        <p><strong>Bitterness</strong>: 20 IBU</p>
+                    </div>
+                </div>
+                <!--Card 1 - Mobile version-->
+                <div class="beer-card mobile-beer-card">
+                    <div class="beer-card-top">
+                        <img class="beer-pic" src="LBE-Assets/faculty-oaked-stout-thumb.png" alt="710 Oaked Stout">
+                        <h1>710 Oaked Stout</h1>
+                    </div>
+                    <div class="beer-card-center-content">
+                        <p>A dry stout with a creamy oatmeal head. The roasted barley offers notes of coffee, while the American oak provides aromas of vanilla and wood.</p>
+                    </div>
+                    <div class="beer-card-details">
+                        <p><a href="https://www.facultybrewing.com"><i class="far fa-regular fa-compass"></i> Faculty Brewing</a></p>
+                        <p><strong>Alcohol Content</strong>: 5% ABV</p>
+                        <p><strong>Bitterness</strong>: 20 IBU</p>
+                    </div>
+                    <div class="bottom-options">
+                        <p class="save-button"><i class="far fa-regular fa-star"></i> Save</p>
+                        <p class="more-button"><i class="fas fa-plus"></i> More like this</p>
+                    </div>
+                </div>
+
+                <!--Card 2 - Persephone-->
+                <div class="beer-card desktop-beer-card">
+                    <img class="beer-pic" src="LBE-Assets/persphone-stout-thumb.png" alt="Dry Irish Stout">
+                    <div class="beer-card-center-content">
+                        <h1>Dry Irish Stout</h1>
+                        <p>Roasty, coffee-like aroma with undertones of freshly baked oatmeal cookies. Flavours of dark coffee and toast with a balancing bitterness. Lightly carbonated with a very smooth texture and a dry finish.</p>
+                        <div class="bottom-options">
+                            <p class="save-button"><i class="far fa-solid fa-star"></i> Save</p>
+                            <p class="more-button"><i class="fas fa-plus"></i> More like this</p>
+                        </div>
+                    </div>
+                    <div class="beer-card-details">
+                        <p><a href="https://www.persephonebrewing.com"><i class="far fa-regular fa-compass"></i> Persphone Brewing Co.</a></p>
+                        <p><strong>Alcohol Content</strong>: 4.5% ABV</p>
+                        <p><strong>Bitterness</strong>: 12 IBU</p>
+                    </div>
+                </div>
+                <!--Card 2 - Mobile version-->
+                <div class="beer-card mobile-beer-card">
+                    <div class="beer-card-top">
+                        <img class="beer-pic" src="LBE-Assets/persphone-stout-thumb.png" alt="Dry Irish Stout">
+                        <h1>Dry Irish Stout</h1>
+                    </div>
+                    <div class="beer-card-center-content">
+                        <p>Roasty, coffee-like aroma with undertones of freshly baked oatmeal cookies. Flavours of dark coffee and toast with a balancing bitterness. Lightly carbonated with a very smooth texture and a dry finish.</p>
+                    </div>
+                    <div class="beer-card-details">
+                        <p><a href="https://www.persephonebrewing.com"><i class="far fa-regular fa-compass"></i> Persphone Brewing Co.</a></p>
+                        <p><strong>Alcohol Content</strong>: 4.5% ABV</p>
+                        <p><strong>Bitterness</strong>: 12 IBU</p>
+                    </div>
+                    <div class="bottom-options">
+                        <p class="save-button"><i class="far fa-regular fa-star"></i> Save</p>
+                        <p class="more-button"><i class="fas fa-plus"></i> More like this</p>
+                    </div>
+                </div>
+
+                <!--Card 3 - Powell-->
+                <div class="beer-card desktop-beer-card">
+                    <img class="beer-pic" src="LBE-Assets/powell-dark-thumbail.png" alt="Dive Bomb Dark Ale">
+                    <div class="beer-card-center-content">
+                        <h1>Dive Bomb Dark Ale</h1>
+                        <p>This dark ale is a light, refreshing, and sessionable. Flavours of caramel, toffee, chocolate and nuts are complimented with Golding hops that add just the right amount of bitterness and a slight floral aroma.
+                        </p>
+                        <div class="bottom-options">
+                            <p class="save-button"><i class="far fa-regular fa-star"></i> Save</p>
+                            <p class="more-button"><i class="fas fa-plus"></i> More like this</p>
+                        </div>
+                    </div>
+                    <div class="beer-card-details">
+                        <p><a href="https://www.powellbeer.com"><i class="far fa-regular fa-compass"></i> Powell Brewery</a></p>
+                        <p><strong>Alcohol Content</strong>: 5% ABV</p>
+                        <p><strong>Bitterness</strong>: 33 IBU</p>
+                    </div>
+                </div>
+                <!--Card 3 - Mobile version-->
+                <div class="beer-card mobile-beer-card">
+                    <div class="beer-card-top">
+                        <img class="beer-pic" src="LBE-Assets/powell-dark-thumbail.png" alt="Dive Bomb Dark Ale">
+                        <h1>Dive Bomb Dark Ale</h1>
+                    </div>
+                    <div class="beer-card-center-content">
+                        <p>This dark ale is a light, refreshing, and sessionable. Flavours of caramel, toffee, chocolate and nuts are complimented with Golding hops that add just the right amount of bitterness and a slight floral aroma.</p>
+                    </div>
+                    <div class="beer-card-details">
+                        <p><a href="https://www.powellbeer.com"><i class="far fa-regular fa-compass"></i> Powell Brewery</a></p>
+                        <p><strong>Alcohol Content</strong>: 5% ABV</p>
+                        <p><strong>Bitterness</strong>: 33 IBU</p>
+                    </div>
+                    <div class="bottom-options">
+                        <p class="save-button"><i class="far fa-regular fa-star"></i> Save</p>
+                        <p class="more-button"><i class="fas fa-plus"></i> More like this</p>
+                    </div>
+                </div>
+                <section class="mobile-more">
+                    <a href="#" class="mobile-more-btn">Load More</a>
+                </section>
+        </section>
+        <section class="pagination">
+            <a href="#" class="previous">&laquo;</a>
+            <a href="#" class="next">&raquo;</a>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="copyright-container">
+            <p>&copy; 2022 Life is a Beer Expedition. All Rights Reserved.</p>
+        </div>
+        <div class="social-media-icons">
+            <a class="nav-link" href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="nav-link" href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="nav-link" href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!--Mobile side menu-->
+    <aside class="mobile-side-menu" id="side-menu">
+        <header class="side-menu-header mobile-header-logo">
+            <img src="LBE-Assets/LBE-Logo-No-Text.png" alt="LBE logo">
+            <i class="fa fa-window-close" id="menu-close"></i>
+        </header>
+        <ul class="side-menu-content">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Beers</a></li>
+            <li><a href="#">Breweries</a></li>
+            <li><a href="#">Expeditions</a></li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+    </aside>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
