@@ -9,6 +9,11 @@
                 text-decoration: none;
                 display: block;
             }
+            
+            hr {
+                width: 40px;
+                border-top: 4px solid #d18200;
+            }
             /*Navigation*/
             
             .nav-container {
@@ -49,6 +54,10 @@
                 color: #d4d6d8;
                 display: block;
                 padding: 0 20px;
+            }
+            
+            .nav-link:focus {
+                color: #e5b76b;
             }
             
             .nav-center,
@@ -97,7 +106,7 @@
             
             .menu-item-list a {
                 cursor: pointer;
-                color: #ffb400;
+                color: #e5b76b;
                 margin-bottom: 3px;
             }
             
@@ -116,7 +125,7 @@
                 display: none;
                 padding: 5px 3px;
                 position: absolute;
-                top: 42px;
+                top: 45px;
                 z-index: 10;
             }
             
@@ -144,13 +153,21 @@
                 color: #ffffff;
                 background-image: url(../LBE-Assets/Hero-Background.png);
                 background-size: cover;
-                height: 800px;
+                height: 900px;
                 text-align: center;
                 max-width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
             }
             
             .hero-container div {
                 padding: 4vh;
+            }
+            
+            .mobile-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             
             .hero-left-content h1 {
@@ -171,10 +188,11 @@
                 font-size: 22px;
                 border: none;
                 border-radius: 5px;
-                padding: 15px;
+                padding: 10px;
                 margin-top: 15px;
                 transition: 0.3s ease-in-out;
                 cursor: pointer;
+                text-align: center;
             }
             
             .hero-button:hover {
@@ -188,17 +206,21 @@
             
             @media (min-width: 900px) {
                 .hero-container {
-                    max-height: 700px;
+                    max-height: 650px;
                     display: flex;
                     justify-content: space-around;
                     align-items: flex-start;
-                    padding: 15vh;
+                    padding: 10vh;
                 }
                 .hero-container div {
                     max-width: 40%;
                     text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
                 }
                 .hero-left-content h1 {
+                    margin-top: 0;
                     margin-bottom: 3vw;
                     font-size: 4vw;
                 }
@@ -210,7 +232,8 @@
                     max-width: 100%;
                 }
                 .hero-button {
-                    width: 200px;
+                    width: 160px;
+                    margin-top: 40px;
                 }
             }
             /*Flavor Selection*/
@@ -218,7 +241,7 @@
             .flavor-selection {
                 background-color: #ffffff;
                 text-align: center;
-                padding: 20px 20px;
+                padding: 20px;
                 max-width: 100%;
             }
             
@@ -235,15 +258,11 @@
                 line-height: 98%;
             }
             
-            hr {
-                width: 40px;
-                border-top: 4px solid #d18200;
-            }
-            
             .flavor-cards-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-bottom: 100px;
             }
             
             .flavor-card {
@@ -255,21 +274,21 @@
             .flavor-details {
                 padding: 0 10px;
                 max-width: 300px;
-                display: flex;
-                flex-direction: column;
                 font-size: 22px;
             }
             
             .flavor-details h3 {
                 font-size: 30px;
-                margin: 0;
+                margin: 0 0 2vh 0;
             }
             
             .flavor-details p {
                 color: #9ca2a9;
+                margin: 0 0 3vh 0;
             }
             
-            .flavor-select-button {
+            .flavor-select-button,
+            .submit-button {
                 width: 280px;
                 color: #ffffff;
                 background-color: #d18200;
@@ -283,7 +302,8 @@
                 text-align: center;
             }
             
-            .flavor-select-button:hover {
+            .flavor-select-button:hover,
+            .submit-button:hover {
                 background-color: #C0C0C0;
                 color: black;
             }
@@ -294,7 +314,7 @@
             
             @media (min-width: 900px) {
                 .flavor-selection {
-                    padding: 60px 120px;
+                    padding: 5vw;
                 }
                 .flavor-selection h2 {
                     font-size: 40px;
@@ -305,8 +325,8 @@
                 .flavor-cards-container {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-around;
-                    max-width: 100%;
+                    justify-content: space-between;
+                    align-items: flex-start;
                 }
                 .flavor-card {
                     display: flex;
@@ -316,13 +336,14 @@
                 }
                 .beer-glass-icon {
                     padding: 5px;
-                    max-height: 150px;
+                    width: 5.5vw;
                     display: block;
                 }
                 .flavor-details {
-                    padding: 0 20px;
-                    max-width: 300px;
-                    max-height: 600px;
+                    padding: 0 2vw;
+                    max-width: 250px;
+                    min-height: 350px;
+                    font-size: 20px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -330,8 +351,7 @@
                 .flavor-select-button {
                     width: 200px;
                     font-size: 22px;
-                    padding: 15px;
-                    margin-bottom: 200px;
+                    margin-bottom: 25px;
                 }
             }
             /*Footer*/
@@ -382,7 +402,7 @@
                 display: none;
             }
             
-            .beer-cards-box {
+            .page-box {
                 background-color: #f4f4f4;
                 padding: 10px 40px;
                 margin: 0;
@@ -393,7 +413,7 @@
                 justify-content: space-around;
             }
             
-            .beer-cards-box h2 {
+            .page-box h2 {
                 text-align: center;
                 font-size: 45px;
                 margin-bottom: 5px;
@@ -413,27 +433,17 @@
                 text-align: center;
             }
             
-            .filter-btn:hover,
-            .sort-btn:hover {
-                background-color: #C0C0C0;
-                color: black;
-            }
-            
             @media (min-width: 900px) {
                 .mobile {
                     display: none;
                 }
-                .beer-cards-box,
-                .profile-selection {
-                    padding: 10px 200px;
+                .page-box {
+                    padding: 2vh 12vw;
                 }
-                .beer-dropdown {
-                    width: 150px;
-                }
-                .beer-cards-box h2 {
+                .page-box h2 {
                     text-align: left;
                 }
-                .beer-cards-box hr {
+                .page-box hr {
                     margin-left: 0;
                 }
                 .filter-buttons {
@@ -442,6 +452,11 @@
                 .filter-btn,
                 .sort-btn {
                     margin-left: 25px;
+                }
+                .filter-btn:hover,
+                .sort-btn:hover {
+                    background-color: #C0C0C0;
+                    color: black;
                 }
             }
             
@@ -452,23 +467,26 @@
                 box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
                 border-radius: 10px;
                 margin: 30px 0;
-                padding: 25px;
+                padding: 20px;
             }
             
             .beer-card-top {
                 display: flex;
+                justify-content: flex-start;
                 align-items: center;
                 padding-bottom: 12px;
             }
             
             .beer-card img {
                 max-height: 100px;
-                max-width: 130px;
+                max-width: 100px;
+                margin-right: 10px;
             }
             
             .beer-card h1 {
-                font-size: 22px;
-                padding: 0 0 0 15px;
+                font-size: 5vw;
+                text-align: center;
+                padding: 0;
                 margin-top: 0;
             }
             
@@ -493,16 +511,9 @@
                 padding: 10px 0;
             }
             
+            .beer-card-details a,
             .save-button {
                 cursor: pointer;
-            }
-            
-            .saved-no {
-                display: none;
-            }
-            
-            .saved-yes {
-                display: block;
             }
             
             .mobile-more {
@@ -535,24 +546,36 @@
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: flex-start;
+                    padding-bottom: 5px;
+                    margin-bottom: 45px;
                 }
                 .beer-card img {
-                    max-height: 120px;
-                    max-width: 150px;
+                    height: 160px;
+                    width: 160px;
                 }
                 .beer-card h1 {
+                    font-size: 22px;
+                    text-align: left;
                     padding: 0;
-                    margin-top: 0;
+                    margin: 0;
                 }
                 .beer-card p {
-                    font-size: 20px;
+                    font-size: 18px;
+                    padding: 0;
+                    margin: 10px 0;
                 }
                 .beer-card-center-content {
-                    max-width: 60%;
+                    width: 55vw;
                     text-align: left;
+                    margin-left: 20px;
+                    margin-right: 5px;
                 }
                 .beer-card-details {
                     text-align: right;
+                    width: 20vw;
+                }
+                .bottom-options p {
+                    margin-right: 15px;
                 }
                 .mobile-beer-card {
                     display: none;
@@ -561,7 +584,7 @@
                     display: flex;
                     justify-content: center;
                     background-color: #f4f4f4;
-                    padding-bottom: 15px;
+                    padding-bottom: 40px;
                 }
                 .pagination a {
                     text-decoration: none;
@@ -621,15 +644,171 @@
             
             .side-menu-content {
                 color: white;
-                font-size: 40px;
+                font-size: 30px;
                 list-style: none;
                 text-align: center;
-                padding: 10px;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
             
-            .show-menu {
+            .mobile-show-menu {
                 opacity: 1;
                 transform: translateY(0%);
+            }
+            /*Side menu accordion*/
+            
+            .mobile-dropdown,
+            .mobile-dropdown ul {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            
+            .mobile-item {
+                text-decoration: none;
+                background-color: #e5b76b;
+                width: 100vw;
+                list-style: none;
+            }
+            
+            .side-menu-content .fas {
+                font-size: 25px;
+            }
+            /*Sign-up Page*/
+            
+            .form-page {
+                padding: 0 5%;
+            }
+            
+            #sign-up-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 15px;
+            }
+            
+            .form-top-content,
+            .form-cell {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            
+            .submit-button {
+                margin-top: 35px;
+                margin-bottom: 15vw;
+            }
+            
+            input[type="text"],
+            input[type="password"] {
+                border: 2px solid #d2d9e2;
+                padding: 10px;
+                background: white;
+                border-radius: 6px;
+                width: 250px;
+                height: 40px;
+                margin-top: 10px;
+            }
+            
+            label {
+                color: #4a5158;
+            }
+            
+            span {
+                color: red;
+                font-size: 16px;
+            }
+            
+            @media (min-width: 900px) {
+                #sign-up-page {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .text-boxes {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 2vh 5vw;
+                }
+                .form-cell {
+                    margin-bottom: 5px;
+                }
+                input[type="text"],
+                input[type="password"] {
+                    width: 40vw;
+                    height: 40px;
+                }
+            }
+            /*Sign-up Modal*/
+            
+            .modal-box {
+                margin: 5px;
+                padding: 5px;
+                background-color: white;
+                font-size: 16px;
+                max-width: 500px;
+                max-height: 300px;
+                border-radius: 10px;
+                box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .circle {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                padding: 20px;
+                margin: 10px 0;
+                background-color: #58a155;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .fa-check {
+                font-size: 20px;
+                color: white;
+                padding: 1px;
+            }
+            
+            .modal-box p {
+                text-align: center;
+            }
+            
+            #explore-button {
+                padding: 15px;
+                width: 200px;
+            }
+            
+            @media (min-width: 900px) {
+                .modal-box {
+                    margin: 5vw;
+                    background-color: white;
+                    padding: 20px 30px;
+                    font-size: 16px;
+                    max-width: 500px;
+                    max-height: 300px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .modal-box p {
+                    font-size: 22px;
+                    padding: 10px;
+                    text-align: center;
+                }
+                .modal-box a {
+                    margin-top: 40px;
+                }
             }
             
             .hidden {

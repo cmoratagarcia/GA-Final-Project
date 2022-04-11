@@ -15,66 +15,67 @@
 </head>
 
 <body>
+
+
+    <!--Header-->
+    <header class="nav-container">
+        <section class="nav-left">
+            <img class="lbe-logo-text" src="LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo">
+        </section>
+        <section class="mobile-nav">
+            <div class="hamburger-menu-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
+            <div class="logo-container"><img class="lbe-logo-no-text" src="LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2">
+            </div>
+        </section>
+
+        <section class="nav-center">
+            <a class="nav-link" href="./index.html">Home</a>
+            <div class="dropdown" id="beer-dropdown">
+                <a class="nav-link" href="#">Beers <i class="fas fa-angle-down"></i></a>
+                <!--Dropdowns-->
+                <aside class="dropdown-menu" id="beer-menu">
+                    <ul class="menu-item-list">
+                        <li><a href="./dark-beers.html">Dark</a></li>
+                        <li><a href="./light-beers.html">Light</a></li>
+                        <li><a href="./hoppy-beers.html">Hoppy</a></li>
+                        <li><a href="#">Other</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="dropdown" id="breweries-dropdown">
+                <a class="nav-link" href="#">Breweries <i class="fas fa-angle-down"></i></a>
+                <aside class="dropdown-menu" id="breweries-menu">
+                    <ul class="menu-item-list">
+                        <li><a href="#">Near Me</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <a class="nav-link" href="#">Expeditions</a>
+        </section>
+
+        <section class="nav-right">
+            <div class="dropdown" id="sign-in-dropdown">
+                <a class="nav-link" href="#">Sign in <i class="fas fa-angle-down"></i></a>
+                <aside class="dropdown-menu" id="sign-in-menu">
+                    <ul class="menu-item-list">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="./sign-up.html">Create Account</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </header>
+    <!--Header END-->
+    <!--Hero Section-->
     <main>
-
-        <!--Header-->
-        <header class="nav-container">
-            <section class="nav-left">
-                <img class="lbe-logo-text" src="LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo">
-            </section>
-            <section class="mobile-nav">
-                <div class="hamburger-menu-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
-                <div class="logo-container"><img class="lbe-logo-no-text" src="LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2">
-                </div>
-            </section>
-
-            <section class="nav-center">
-                <a class="nav-link" href="./index.html">Home</a>
-                <div class="dropdown" id="beer-dropdown">
-                    <a class="nav-link" href="#">Beers <i class="fas fa-angle-down"></i></a>
-                    <!--Dropdowns-->
-                    <aside class="dropdown-menu" id="beer-menu">
-                        <ul class="menu-item-list">
-                            <li><a href="./dark-beers.html">Dark</a></li>
-                            <li><a href="#">Light</a></li>
-                            <li><a href="#">Hoppy</a></li>
-                            <li><a href="#">Other</a></li>
-                            <li><a href="#">Search</a></li>
-                        </ul>
-                    </aside>
-                </div>
-                <div class="dropdown" id="breweries-dropdown">
-                    <a class="nav-link" href="#">Breweries <i class="fas fa-angle-down"></i></a>
-                    <aside class="dropdown-menu" id="breweries-menu">
-                        <ul class="menu-item-list">
-                            <li><a href="#">Near Me</a></li>
-                            <li><a href="#">Map</a></li>
-                            <li><a href="#">Search</a></li>
-                        </ul>
-                    </aside>
-                </div>
-                <a class="nav-link" href="#">Expeditions</a>
-            </section>
-
-            <section class="nav-right">
-                <div class="dropdown" id="sign-in-dropdown">
-                    <a class="nav-link" href="#">Sign in <i class="fas fa-angle-down"></i></a>
-                    <aside class="dropdown-menu" id="sign-in-menu">
-                        <ul class="menu-item-list">
-                            <li><a href="#">Sign In</a></li>
-                            <li><a href="#">Create Account</a></li>
-                        </ul>
-                    </aside>
-                </div>
-            </section>
-        </header>
-
-        <!--Hero Section-->
         <section class="hero-container">
-            <div class="hero-left-content">
+            <div class="hero-left-content mobile-container">
                 <h1>Welcome to Life is a Beer Expedition!</h1>
                 <p>Love beer? Love going to breweries? Love talking beer? Well you've come to the right place! Life is a Beer Expedition is the place to learn, share and connect about all things beer with your friends and friends to be.</p>
-                <button class="hero-button">Sign Up Now!</button>
+                <a class="hero-button" href="./sign-up.html">Sign Up Now!</a>
             </div>
             <div class="hero-right-content"><img src="LBE-Assets/Home-App-Screenshots.png" alt="Mobile app screenshots"></div>
         </section>
@@ -89,9 +90,12 @@
                 <div class="flavor-card dark">
                     <img class="beer-glass-icon" src="LBE-Assets/pint-dark.png" alt="Dark beer pint">
                     <div class="flavor-details">
-                        <h3>Dark</h3>
-                        <p>Malty overtones, toasty, caramel flavors and mid to high alcohol levels. Includes brown ales, porters and stouts.</p>
-                        <a class="flavor-select-button" href="./dark-beers.html">Select</a>
+                        <div class="text-section">
+                            <h3>Dark</h3>
+                            <p>Malty overtones, toasty, caramel flavors and mid to high alcohol levels. Includes brown ales, porters and stouts.</p>
+                        </div>
+                        <div class="button-section"><a class="flavor-select-button" href="./dark-beers.html">Select</a>
+                        </div>
                     </div>
                 </div>
 
@@ -99,9 +103,11 @@
                 <div class="flavor-card light">
                     <img class="beer-glass-icon" src="LBE-Assets/pint-light.png" alt="Light beer pint">
                     <div class="flavor-details">
-                        <h3>Light</h3>
-                        <p>Golden-colored beers that are light in flavor and low in alcohol content. Includes lagers and pilsners.</p>
-                        <a class="flavor-select-button" href="./dark-beers.html">Select</a>
+                        <div class="text-section">
+                            <h3>Light</h3>
+                            <p>Golden-colored beers that are light in flavor and low in alcohol content. Includes lagers and pilsners.</p>
+                        </div>
+                        <div class="button-section"><a class="flavor-select-button" href="./light-beers.html">Select</a></div>
                     </div>
                 </div>
 
@@ -109,9 +115,11 @@
                 <div class="flavor-card hoppy">
                     <img class="beer-glass-icon" src="LBE-Assets/pint-hoppy.png" alt="Hoppy beer pint">
                     <div class="flavor-details">
-                        <h3>Hoppy</h3>
-                        <p>Strong hop bitterness with piney and floral flavors. Includes pale ales (generally lower in alcohol content) and IPAs.</p>
-                        <a class="flavor-select-button" href="./dark-beers.html">Select</a>
+                        <div class="text-section">
+                            <h3>Hoppy</h3>
+                            <p>Strong hop bitterness with piney and floral flavors. Includes pale ales (generally lower in alcohol content) and IPAs.</p>
+                        </div>
+                        <div class="button-section"><a class="flavor-select-button" href="./hoppy-beers.html">Select</a></div>
                     </div>
                 </div>
             </div>
@@ -136,13 +144,37 @@
             <img src="LBE-Assets/LBE-Logo-No-Text.png" alt="LBE logo">
             <i class="fa fa-window-close" id="menu-close"></i>
         </header>
-        <ul class="side-menu-content">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Beers</a></li>
-            <li><a href="#">Breweries</a></li>
-            <li><a href="#">Expeditions</a></li>
-            <li><a href="#">Sign In</a></li>
-        </ul>
+        <div class="side-menu-content">
+            <a class="mobile-dropdown" href="./index.html">Home</a>
+            <div class="mobile-dropdown" id="mobile-beer-dropdown">
+                <a href="#">Beers <i class="fas fa-angle-down"></i></a>
+                <ul class="mobile-item hidden" id="beer-item">
+                    <li><a href="./dark-beers.html">Dark</a></li>
+                    <li><a href="./light-beers.html">Light</a></li>
+                    <li><a href="./hoppy-beers.html">Hoppy</a></li>
+                    <li><a href="#">Other</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </div>
+            <div class="mobile-dropdown" id="mobile-breweries-dropdown">
+                <a href="#">Breweries <i class="fas fa-angle-down"></i></a>
+                <ul class="mobile-item hidden" id="brewery-item">
+                    <li><a href="#">Near Me</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+
+            </div>
+            <a class="mobile-dropdown" href="#">Expeditions</a>
+            <div class="mobile-dropdown" id="mobile-sign-in-dropdown">
+                <a href="#">Sign In <i class="fas fa-angle-down"></i></a>
+                <ul class="mobile-item hidden" id="sign-in-item">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="./sign-up.html">Create Account</a></li>
+                </ul>
+
+            </div>
+
     </aside>
 
     <script src="js/script.js"></script>

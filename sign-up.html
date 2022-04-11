@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LBE - Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' href='https://necolas.github.io/normalize.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/062c3de4d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+
+        <!--Header-->
+        <header class="nav-container">
+            <section class="nav-left">
+                <img class="lbe-logo-text" src="LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo">
+            </section>
+            <section class="mobile-nav">
+                <div class="hamburger-menu-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
+                <div class="logo-container"><img class="lbe-logo-no-text" src="LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2">
+                </div>
+            </section>
+
+            <section class="nav-center">
+                <a class="nav-link" href="./index.html">Home</a>
+                <div class="dropdown" id="beer-dropdown">
+                    <a class="nav-link" href="#">Beers <i class="fas fa-angle-down"></i></a>
+                    <!--Dropdowns-->
+                    <aside class="dropdown-menu" id="beer-menu">
+                        <ul class="menu-item-list">
+                            <li><a href="./dark-beers.html">Dark</a></li>
+                            <li><a href="./light-beers.html">Light</a></li>
+                            <li><a href="./hoppy-beers.html">Hoppy</a></li>
+                            <li><a href="#">Other</a></li>
+                            <li><a href="#">Search</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="dropdown" id="breweries-dropdown">
+                    <a class="nav-link" href="#">Breweries <i class="fas fa-angle-down"></i></a>
+                    <aside class="dropdown-menu" id="breweries-menu">
+                        <ul class="menu-item-list">
+                            <li><a href="#">Near Me</a></li>
+                            <li><a href="#">Map</a></li>
+                            <li><a href="#">Search</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <a class="nav-link" href="#">Expeditions</a>
+            </section>
+
+            <section class="nav-right">
+                <div class="dropdown" id="sign-in-dropdown">
+                    <a class="nav-link" href="#">Sign in <i class="fas fa-angle-down"></i></a>
+                    <aside class="dropdown-menu" id="sign-in-menu">
+                        <ul class="menu-item-list">
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="./sign-up.html">Create Account</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+        </header>
+        <!--Header END-->
+
+
+        <!--Form-->
+        <main class="page-box form-page">
+            <section id="sign-up-page">
+                <div class="form-top-content">
+                    <h2>Sign Up</h2>
+                    <hr>
+                </div>
+                <form id="sign-up-form">
+                    <!--Prevent form from submitting-->
+                    <div class="text-boxes">
+                        <div class="form-cell">
+                            <label for="fname">First Name</label><br>
+                            <input type="text" id="fname" placeholder="First" required>
+                        </div>
+                        <div class="form-cell">
+                            <label for="lname">Last Name</label><br>
+                            <input type="text" id="lname" placeholder="Last">
+                        </div>
+                        <div class="form-cell">
+                            <label for="email">Email Address</label><br>
+                            <input type="text" id="email" placeholder="name@email.com" required>
+                        </div>
+                        <div class="form-cell">
+                            <label for="password">Password</label><br>
+                            <input type="password" id="password" placeholder="Password" required>
+                            <span class="error hidden">Password must be at least 8 characters long.</span>
+                        </div>
+                        <div class="form-cell">
+                            <label for="country">Country</label><br>
+                            <input type="text" id="country" placeholder="Country">
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input class="submit-button" type="submit" value="Submit Form">
+                    </div>
+                </form>
+
+                <!--Success Modal-->
+            </section>
+            <aside>
+                <div class="modal-box hidden" id="success-modal">
+                    <div class="circle"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <p>Your account was created successfully!</p>
+                    <a class="flavor-select-button" id="explore-button" href="./index.html">Start Exploring</a>
+                </div>
+            </aside>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="copyright-container">
+                <p>&copy; 2022 Life is a Beer Expedition. All Rights Reserved.</p>
+            </div>
+            <div class="social-media-icons">
+                <a class="nav-link" href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="nav-link" href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="nav-link" href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+
+        <!--Mobile side menu-->
+        <aside class="mobile-side-menu" id="side-menu">
+            <header class="side-menu-header mobile-header-logo">
+                <img src="LBE-Assets/LBE-Logo-No-Text.png" alt="LBE logo">
+                <i class="fa fa-window-close" id="menu-close"></i>
+            </header>
+            <div class="side-menu-content">
+                <a class="mobile-dropdown" href="./index.html">Home</a>
+                <div class="mobile-dropdown" id="mobile-beer-dropdown">
+                    <a href="#">Beers <i class="fas fa-angle-down"></i></a>
+                    <ul class="mobile-item hidden" id="beer-item">
+                        <li><a href="./dark-beers.html">Dark</a></li>
+                        <li><a href="./light-beers.html">Light</a></li>
+                        <li><a href="./hoppy-beers.html">Hoppy</a></li>
+                        <li><a href="#">Other</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-dropdown" id="mobile-breweries-dropdown">
+                    <a href="#">Breweries <i class="fas fa-angle-down"></i></a>
+                    <ul class="mobile-item hidden" id="brewery-item">
+                        <li><a href="#">Near Me</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+
+                </div>
+                <a class="mobile-dropdown" href="#">Expeditions</a>
+                <div class="mobile-dropdown" id="mobile-sign-in-dropdown">
+                    <a href="#">Sign In <i class="fas fa-angle-down"></i></a>
+                    <ul class="mobile-item hidden" id="sign-in-item">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="./sign-up.html">Create Account</a></li>
+                    </ul>
+
+                </div>
+
+        </aside>
+
+        <script src="js/script.js"></script>
+
+</body>
+
+</html>
