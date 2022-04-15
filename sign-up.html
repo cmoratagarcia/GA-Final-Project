@@ -79,7 +79,6 @@
                     <hr>
                 </div>
                 <form id="sign-up-form">
-                    <!--Prevent form from submitting-->
                     <div class="text-boxes">
                         <div class="form-cell">
                             <label for="fname">First Name</label><br>
@@ -96,7 +95,7 @@
                         <div class="form-cell">
                             <label for="password">Password</label><br>
                             <input type="password" id="password" placeholder="Password" required>
-                            <span class="error hidden">Password must be at least 8 characters long.</span>
+                            <span id="error" class="hidden">Password must be at least 8 characters long.</span>
                         </div>
                         <div class="form-cell">
                             <label for="country">Country</label><br>
@@ -107,9 +106,8 @@
                         <input class="submit-button" type="submit" value="Submit Form">
                     </div>
                 </form>
-
-                <!--Success Modal-->
             </section>
+            <!--Success Modal-->
             <aside>
                 <div class="modal-box hidden" id="success-modal">
                     <div class="circle"><i class="fa fa-check" aria-hidden="true"></i></div>

@@ -57,8 +57,6 @@ document.getElementById("menu-close").addEventListener("click", function() {
 })
 
 /*Save button. When you click on the star button, it toggles between Save/Saved.*/
-
-
 let saveButton = document.querySelectorAll(".save-button");
 
 saveButton.forEach(item => {
@@ -94,3 +92,22 @@ document.getElementById("mobile-sign-in-dropdown").addEventListener("click", fun
     document.getElementById("brewery-item").classList.add("hidden");
     document.getElementById("sign-in-item").classList.toggle("hidden");
 })
+
+/*Sign up form*/
+document.getElementById("sign-up-form").addEventListener("submit",
+    function(event) {
+        // event.preventDefault() prevents the browser from refreshing
+        event.preventDefault();
+
+        let password = document.getElementById("password");
+
+        if (password.value.length < 8) {
+            password.focus;
+            document.getElementById("error").classList.remove("hidden");
+            // Show an error message on the DOM
+        } else {
+            document.getElementById("sign-up-page").setAttribute('style', 'display: none');
+            document.getElementById("success-modal").classList.remove("hidden");
+        }
+    }
+);
