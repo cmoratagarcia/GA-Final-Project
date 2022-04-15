@@ -1,817 +1,830 @@
-        body {
-            background-color: #f4f4f4;
-            font-family: 'Poppins', sans-serif;
-            margin: 0 auto;
-            font-size: 22px;
-        }
-        
-        a {
-            all: unset;
-            text-decoration: none;
-            display: block;
-        }
-        
-        hr {
-            width: 40px;
-            border-top: 4px solid #d18200;
-        }
-        /*Navigation*/
-        
+    body {
+        background-color: #f4f4f4;
+        font-family: 'Poppins', sans-serif;
+        margin: 0 auto;
+        font-size: 22px;
+    }
+    
+    a {
+        all: unset;
+        text-decoration: none;
+        display: block;
+    }
+    
+    hr {
+        width: 40px;
+        border-top: 4px solid #d18200;
+    }
+    /*Navigation*/
+    
+    .nav-container {
+        background-color: #5a6169;
+        padding: 5px 10px;
+        font-size: 1.5vw;
+        max-width: 100%;
+    }
+    
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .mobile-nav div {
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .fa-bars {
+        font-size: 40px;
+        color: white;
+        padding: 10px;
+    }
+    
+    .lbe-logo-no-text {
+        display: block;
+        padding: 10px;
+    }
+    
+    .lbe-logo-text {
+        display: none;
+    }
+    
+    .nav-link {
+        cursor: pointer;
+        color: #d4d6d8;
+        display: block;
+        padding: 0 20px;
+    }
+    
+    .nav-link:focus {
+        color: #e5b76b;
+    }
+    
+    .nav-center,
+    .nav-right {
+        display: none;
+    }
+    
+    .fa-angle-down {
+        font-size: 1.2vw;
+    }
+    
+    @media (min-width: 900px) {
         .nav-container {
-            background-color: #5a6169;
-            padding: 5px 10px;
-            font-size: 1.5vw;
-            max-width: 100%;
-        }
-        
-        .mobile-nav {
             display: flex;
             align-items: center;
+            justify-content: space-around;
+            padding: 5px 10%;
         }
-        
-        .mobile-nav div {
-            width: 45%;
-            display: flex;
-            justify-content: flex-start;
-        }
-        
-        .fa-bars {
-            font-size: 40px;
-            color: white;
-            padding: 10px;
-        }
-        
-        .lbe-logo-no-text {
-            display: block;
-            padding: 10px;
-        }
-        
         .lbe-logo-text {
-            display: none;
-        }
-        
-        .nav-link {
-            cursor: pointer;
-            color: #d4d6d8;
             display: block;
-            padding: 0 20px;
         }
-        
-        .nav-link:focus {
-            color: #e5b76b;
+        .nav-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1.5;
         }
-        
-        .nav-center,
         .nav-right {
-            display: none;
-        }
-        
-        .fa-angle-down {
-            font-size: 1.2vw;
-        }
-        
-        @media (min-width: 900px) {
-            .nav-container {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                padding: 5px 10%;
-            }
-            .lbe-logo-text {
-                display: block;
-            }
-            .nav-center {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-grow: 1.5;
-            }
-            .nav-right {
-                display: block;
-            }
-            .mobile-nav {
-                display: none;
-            }
-        }
-        /*Dropdowns*/
-        
-        .dropdown {
-            position: relative;
-        }
-        
-        .menu-item-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .menu-item-list a {
-            cursor: pointer;
-            color: #e5b76b;
-            margin: 0 0 3px 0;
-            padding: 0 10px;
-        }
-        
-        .menu-item-list li:hover {
-            text-decoration: underline;
-        }
-        
-        .dropdown {
-            padding: 10px;
-        }
-        
-        .dropdown-menu {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
-            display: none;
-            padding: 5px 0;
-            margin: 0;
-            position: absolute;
-            top: 50px;
-            z-index: 10;
-        }
-        
-        #beer-menu {
-            left: 20px;
-            width: 120px;
-        }
-        
-        #breweries-menu {
-            left: 20px;
-            width: 140px;
-        }
-        
-        #sign-in-menu {
-            left: 15px;
-            width: 220px;
-        }
-        
-        .show {
             display: block;
         }
-        /*Hero*/
-        
+        .mobile-nav {
+            display: none;
+        }
+    }
+    /*Dropdowns*/
+    
+    .dropdown {
+        position: relative;
+    }
+    
+    .menu-item-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu-item-list a {
+        cursor: pointer;
+        color: #e5b76b;
+        margin: 0 0 3px 0;
+        padding: 0 10px;
+    }
+    
+    .menu-item-list li:hover {
+        text-decoration: underline;
+    }
+    
+    .dropdown {
+        padding: 10px;
+    }
+    
+    .dropdown-menu {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
+        display: none;
+        padding: 5px 0;
+        margin: 0;
+        position: absolute;
+        top: 50px;
+        z-index: 10;
+    }
+    
+    #beer-menu {
+        left: 20px;
+        width: 120px;
+    }
+    
+    #breweries-menu {
+        left: 20px;
+        width: 140px;
+    }
+    
+    #sign-in-menu {
+        left: 15px;
+        width: 220px;
+    }
+    
+    .show {
+        display: block;
+    }
+    /*Hero*/
+    
+    .hero-container {
+        color: #ffffff;
+        background-image: url(../LBE-Assets/Hero-Background.png);
+        background-size: cover;
+        height: 900px;
+        text-align: center;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .hero-container div {
+        padding: 4vh;
+    }
+    
+    .mobile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-left-content h1 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    
+    .hero-left-content p {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-top: 5px;
+    }
+    
+    .hero-button {
+        width: 280px;
+        color: #e5b76b;
+        background-color: #ffffff;
+        font-size: 22px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 15px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .hero-button:hover {
+        background-color: #C0C0C0;
+        color: black;
+    }
+    
+    .hero-right-content {
+        display: none;
+    }
+    
+    @media (min-width: 900px) {
         .hero-container {
-            color: #ffffff;
-            background-image: url(../LBE-Assets/Hero-Background.png);
-            background-size: cover;
-            height: 900px;
-            text-align: center;
-            max-width: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
+            max-height: 650px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10vh;
         }
-        
         .hero-container div {
-            padding: 4vh;
-        }
-        
-        .mobile-container {
+            max-width: 40%;
+            text-align: left;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
         }
-        
         .hero-left-content h1 {
-            font-size: 48px;
-            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 3vw;
+            font-size: 4vw;
         }
-        
-        .hero-left-content p {
-            font-size: 25px;
-            line-height: 1.5;
-            margin-top: 5px;
-        }
-        
-        .hero-button {
-            width: 280px;
-            color: #e5b76b;
-            background-color: #ffffff;
-            font-size: 22px;
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-            margin-top: 15px;
-            transition: 0.3s ease-in-out;
-            cursor: pointer;
-            text-align: center;
-        }
-        
-        .hero-button:hover {
-            background-color: #C0C0C0;
-            color: black;
-        }
-        
         .hero-right-content {
-            display: none;
+            display: flex;
+            justify-content: center;
         }
-        
-        @media (min-width: 900px) {
-            .hero-container {
-                max-height: 650px;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                padding: 10vh;
-            }
-            .hero-container div {
-                max-width: 40%;
-                text-align: left;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .hero-left-content h1 {
-                margin-top: 0;
-                margin-bottom: 3vw;
-                font-size: 4vw;
-            }
-            .hero-right-content {
-                display: flex;
-                justify-content: center;
-            }
-            .hero-right-content img {
-                max-width: 100%;
-            }
-            .hero-button {
-                width: 160px;
-                margin-top: 40px;
-            }
-        }
-        /*Flavor Selection*/
-        
-        .flavor-selection {
-            background-color: #ffffff;
-            text-align: center;
-            padding: 20px;
+        .hero-right-content img {
             max-width: 100%;
         }
-        
+        .hero-button {
+            width: 160px;
+            margin-top: 40px;
+        }
+    }
+    /*Flavor Selection*/
+    
+    .flavor-selection {
+        background-color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .flavor-selection h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+        font-weight: 100;
+    }
+    
+    .flavor-selection h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 0;
+        line-height: 98%;
+    }
+    
+    .flavor-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
+    .flavor-card {
+        display: flex;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .flavor-details {
+        padding: 0 10px;
+        max-width: 300px;
+        font-size: 22px;
+    }
+    
+    .flavor-details h3 {
+        font-size: 30px;
+        margin: 0 0 2vh 0;
+    }
+    
+    .flavor-details p {
+        color: #9ca2a9;
+        margin: 0 0 3vh 0;
+    }
+    
+    .flavor-select-button,
+    .submit-button {
+        width: 280px;
+        color: #ffffff;
+        background-color: #d18200;
+        font-size: 22px;
+        border: none;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 50px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .flavor-select-button:hover,
+    .submit-button:hover {
+        background-color: #C0C0C0;
+        color: black;
+    }
+    
+    .beer-glass-icon {
+        display: none;
+    }
+    
+    @media (min-width: 900px) {
+        .flavor-selection {
+            padding: 5vw;
+        }
         .flavor-selection h2 {
-            font-size: 30px;
-            margin-bottom: 0;
-            font-weight: 100;
-        }
-        
-        .flavor-selection h1 {
             font-size: 40px;
-            font-weight: bold;
-            margin-top: 0;
-            line-height: 98%;
         }
-        
+        .flavor-selection h1 {
+            font-size: 45px;
+        }
         .flavor-cards-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 100px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
         }
-        
         .flavor-card {
             display: flex;
-            text-align: center;
-            margin-top: 20px;
+            align-items: flex-start;
+            text-align: left;
+            margin-top: 40px;
         }
-        
+        .beer-glass-icon {
+            padding: 5px;
+            width: 5.5vw;
+            display: block;
+        }
         .flavor-details {
-            padding: 0 10px;
-            max-width: 300px;
+            padding: 0 2vw;
+            max-width: 250px;
+            min-height: 350px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .flavor-select-button {
+            width: 200px;
             font-size: 22px;
+            margin-bottom: 25px;
         }
-        
-        .flavor-details h3 {
-            font-size: 30px;
-            margin: 0 0 2vh 0;
+    }
+    /*Footer*/
+    
+    footer {
+        background-color: #373a3e;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+    
+    footer p {
+        text-align: center;
+    }
+    
+    .social-media-icons {
+        display: flex;
+    }
+    
+    .social-media-icons .nav-link {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .fab {
+        color: #9b9c9e;
+        padding: 10px;
+    }
+    
+    @media (min-width: 900px) {
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 160px;
+            font-size: 20px;
         }
-        
-        .flavor-details p {
-            color: #9ca2a9;
-            margin: 0 0 3vh 0;
+    }
+    /*Beer pages*/
+    
+    .desktop {
+        display: none;
+    }
+    
+    .filter-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .page-box h2 {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+    
+    .filter-btn,
+    .sort-btn {
+        margin: 10px;
+        color: #ffffff;
+        background-color: #d18200;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 12px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        width: 100px;
+        text-align: center;
+    }
+    
+    @media (min-width: 900px) {
+        .mobile {
+            display: none;
         }
-        
-        .flavor-select-button,
-        .submit-button {
-            width: 280px;
-            color: #ffffff;
-            background-color: #d18200;
-            font-size: 22px;
-            border: none;
-            border-radius: 5px;
-            padding: 15px;
-            margin-bottom: 50px;
-            transition: 0.3s ease-in-out;
-            cursor: pointer;
-            text-align: center;
+        .page-box {
+            padding: 2vh 12vw;
         }
-        
-        .flavor-select-button:hover,
-        .submit-button:hover {
+        .page-box h2 {
+            text-align: left;
+        }
+        .page-box hr {
+            margin-left: 0;
+        }
+        .filter-buttons {
+            justify-content: flex-end;
+        }
+        .filter-btn,
+        .sort-btn {
+            margin-left: 25px;
+        }
+        .filter-btn:hover,
+        .sort-btn:hover {
             background-color: #C0C0C0;
             color: black;
         }
-        
-        .beer-glass-icon {
-            display: none;
-        }
-        
-        @media (min-width: 900px) {
-            .flavor-selection {
-                padding: 5vw;
-            }
-            .flavor-selection h2 {
-                font-size: 40px;
-            }
-            .flavor-selection h1 {
-                font-size: 45px;
-            }
-            .flavor-cards-container {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-start;
-            }
-            .flavor-card {
-                display: flex;
-                align-items: flex-start;
-                text-align: left;
-                margin-top: 40px;
-            }
-            .beer-glass-icon {
-                padding: 5px;
-                width: 5.5vw;
-                display: block;
-            }
-            .flavor-details {
-                padding: 0 2vw;
-                max-width: 250px;
-                min-height: 350px;
-                font-size: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-            .flavor-select-button {
-                width: 200px;
-                font-size: 22px;
-                margin-bottom: 25px;
-            }
-        }
-        /*Footer*/
-        
-        footer {
-            background-color: #373a3e;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 15px 40px;
-            font-size: 18px;
-        }
-        
-        footer p {
-            text-align: center;
-        }
-        
-        .social-media-icons {
-            display: flex;
-        }
-        
-        .social-media-icons .nav-link {
-            display: block;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .fab {
-            color: #9b9c9e;
-            padding: 10px;
-        }
-        
-        @media (min-width: 900px) {
-            footer {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                padding: 15px 160px;
-                font-size: 20px;
-            }
-        }
-        /*Beer pages*/
-        
-        .desktop {
-            display: none;
-        }
-        
-        .filter-buttons {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .page-box h2 {
-            text-align: center;
-            font-size: 45px;
-            margin-bottom: 5px;
-        }
-        
-        .filter-btn,
-        .sort-btn {
-            margin: 10px;
-            color: #ffffff;
-            background-color: #d18200;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 12px;
-            transition: 0.3s ease-in-out;
-            cursor: pointer;
-            width: 100px;
-            text-align: center;
-        }
-        
-        @media (min-width: 900px) {
-            .mobile {
-                display: none;
-            }
-            .page-box {
-                padding: 2vh 12vw;
-            }
-            .page-box h2 {
-                text-align: left;
-            }
-            .page-box hr {
-                margin-left: 0;
-            }
-            .filter-buttons {
-                justify-content: flex-end;
-            }
-            .filter-btn,
-            .sort-btn {
-                margin-left: 25px;
-            }
-            .filter-btn:hover,
-            .sort-btn:hover {
-                background-color: #C0C0C0;
-                color: black;
-            }
-        }
-        
+    }
+    
+    .beer-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        margin: 40px 0;
+        padding: 30px;
+    }
+    
+    .beer-card-top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 12px;
+    }
+    
+    .beer-card img {
+        max-height: 100px;
+        max-width: 100px;
+        margin-right: 15px;
+    }
+    
+    .beer-card h1 {
+        font-size: 5vw;
+        text-align: left;
+        padding: 0 0 0 5px;
+        margin-top: 0;
+    }
+    
+    .beer-card p {
+        font-size: 16px;
+        color: #5a6169;
+        margin: 5px;
+    }
+    
+    .bottom-options {
+        display: flex;
+    }
+    
+    .beer-card a,
+    .bottom-options p {
+        text-decoration: none;
+        color: #d18200;
+        font-weight: bold;
+    }
+    
+    .beer-card-details {
+        padding: 10px 0;
+    }
+    
+    .beer-card-details a,
+    .save-button {
+        cursor: pointer;
+    }
+    
+    .mobile-more {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mobile-more-btn {
+        color: #ffffff;
+        text-align: center;
+        background-color: #d18200;
+        border: none;
+        border-radius: 5px;
+        padding: 12px;
+        margin: 25px;
+        width: 160px;
+    }
+    
+    .desktop-beer-card {
+        display: none;
+    }
+    
+    .pagination {
+        display: none;
+    }
+    
+    @media (min-width: 900px) {
         .beer-card {
             display: flex;
-            flex-direction: column;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-            margin: 40px 0;
-            padding: 30px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 5px;
+            margin-bottom: 45px;
+            border-radius: 10px;
+            padding: 20px;
         }
-        
-        .beer-card-top {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding-bottom: 12px;
-        }
-        
         .beer-card img {
-            max-height: 100px;
-            max-width: 100px;
-            margin-right: 15px;
-        }
-        
-        .beer-card h1 {
-            font-size: 5vw;
-            text-align: left;
-            padding: 0 0 0 5px;
-            margin-top: 0;
-        }
-        
-        .beer-card p {
-            font-size: 16px;
-            color: #5a6169;
-            margin: 5px;
-        }
-        
-        .bottom-options {
-            display: flex;
-        }
-        
-        .beer-card a,
-        .bottom-options p {
-            text-decoration: none;
-            color: #d18200;
-            font-weight: bold;
-        }
-        
-        .beer-card-details {
-            padding: 10px 0;
-        }
-        
-        .beer-card-details a,
-        .save-button {
-            cursor: pointer;
-        }
-        
-        .mobile-more {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .mobile-more-btn {
-            color: #ffffff;
-            text-align: center;
-            background-color: #d18200;
-            border: none;
-            border-radius: 5px;
-            padding: 12px;
-            margin: 25px;
+            height: 160px;
             width: 160px;
         }
-        
-        .desktop-beer-card {
-            display: none;
-        }
-        
-        .pagination {
-            display: none;
-        }
-        
-        @media (min-width: 900px) {
-            .beer-card {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-start;
-                padding-bottom: 5px;
-                margin-bottom: 45px;
-                border-radius: 10px;
-                padding: 20px;
-            }
-            .beer-card img {
-                height: 160px;
-                width: 160px;
-            }
-            .beer-card h1 {
-                font-size: 22px;
-                text-align: left;
-                padding: 0;
-                margin: 0;
-            }
-            .beer-card p {
-                font-size: 18px;
-                padding: 0;
-                margin: 10px 0;
-            }
-            .beer-card-center-content {
-                width: 55vw;
-                text-align: left;
-                margin-left: 20px;
-                margin-right: 5px;
-            }
-            .beer-card-details {
-                text-align: right;
-                width: 20vw;
-            }
-            .bottom-options p {
-                margin-right: 15px;
-            }
-            .mobile-beer-card {
-                display: none;
-            }
-            .pagination {
-                display: flex;
-                justify-content: center;
-                background-color: #f4f4f4;
-                padding-bottom: 40px;
-            }
-            .pagination a {
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                height: 30px;
-                width: 30px;
-                padding: 12px;
-                margin: 2px;
-            }
-            .previous {
-                background-color: #f1f1f1;
-                color: black;
-            }
-            .previous:hover {
-                background-color: #C0C0C0;
-                color: black;
-            }
-            .next {
-                background-color: #d18200;
-                color: white;
-            }
-            .next:hover {
-                background-color: #C0C0C0;
-                color: black;
-            }
-            .mobile-more-btn {
-                display: none;
-            }
-        }
-        /*Mobile side menu*/
-        
-        .mobile-side-menu {
-            padding-top: 25px;
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 2;
-            background-color: #d18200;
-            cursor: pointer;
-            opacity: 0;
-            transform: translateY(100%);
-            transition: 0.4s ease-in-out;
-        }
-        
-        .side-menu-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px;
-        }
-        
-        .fa-window-close {
-            font-size: 40px;
-            color: white;
-            padding-right: 10px;
-        }
-        
-        .side-menu-content {
-            color: white;
-            font-size: 30px;
-            list-style: none;
-            text-align: center;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .mobile-show-menu {
-            opacity: 1;
-            transform: translateY(0%);
-        }
-        /*Side menu accordion*/
-        
-        .mobile-dropdown,
-        .mobile-dropdown ul {
-            margin: 0;
+        .beer-card h1 {
+            font-size: 22px;
+            text-align: left;
             padding: 0;
-            text-align: center;
+            margin: 0;
         }
-        
-        .mobile-item {
+        .beer-card p {
+            font-size: 18px;
+            padding: 0;
+            margin: 10px 0;
+        }
+        .beer-card-center-content {
+            width: 55vw;
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+        .beer-card-details {
+            text-align: right;
+            width: 20vw;
+        }
+        .bottom-options p {
+            margin-right: 15px;
+        }
+        .mobile-beer-card {
+            display: none;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding-bottom: 40px;
+        }
+        .pagination a {
             text-decoration: none;
-            background-color: #e5b76b;
-            width: 100vw;
-            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            padding: 12px;
+            margin: 2px;
         }
-        
-        .side-menu-content .fas {
-            font-size: 25px;
+        .previous {
+            background-color: #f1f1f1;
+            color: black;
         }
-        /*Sign-up Page*/
-        
-        #sign-up-page {
+        .previous:hover {
+            background-color: #C0C0C0;
+            color: black;
+        }
+        .next {
+            background-color: #d18200;
+            color: white;
+        }
+        .next:hover {
+            background-color: #C0C0C0;
+            color: black;
+        }
+        .mobile-more-btn {
+            display: none;
+        }
+    }
+    /*Mobile side menu*/
+    
+    .mobile-side-menu {
+        padding-top: 25px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background-color: #d18200;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: 0.4s ease-in-out;
+    }
+    
+    .side-menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+    }
+    
+    .fa-window-close {
+        font-size: 40px;
+        color: white;
+        padding-right: 10px;
+    }
+    
+    .side-menu-content {
+        color: white;
+        font-size: 30px;
+        list-style: none;
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mobile-show-menu {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    /*Side menu accordion*/
+    
+    .mobile-dropdown,
+    .mobile-dropdown ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .mobile-item {
+        text-decoration: none;
+        background-color: #e5b76b;
+        width: 100vw;
+        list-style: none;
+    }
+    
+    .side-menu-content .fas {
+        font-size: 25px;
+    }
+    /*Sign-up Page*/
+    
+    #sign-up-page {
+        padding-top: 15px;
+        margin: 15px auto;
+    }
+    
+    .form-top-content,
+    .form-cell {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    #sign-up-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-cell {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 270px;
+    }
+    
+    .submit-button {
+        margin-top: 35px;
+        margin-bottom: 15vw;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        border: 2px solid #d2d9e2;
+        padding: 10px;
+        background: white;
+        border-radius: 6px;
+        width: 250px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    
+    span {
+        color: red;
+        font-size: 16px;
+        display: block;
+        max-width: 80%;
+    }
+    
+    @media (min-width: 900px) {
+        .form-page {
+            padding: 0 5%;
+        }
+        #sign-up-form,
+        .form-cell {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 15px;
+            align-items: flex-start;
         }
-        
-        .form-top-content,
+        .text-boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2vh 5vw;
+        }
         .form-cell {
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
+            width: fit-content;
         }
-        
-        .submit-button {
-            margin-top: 35px;
-            margin-bottom: 15vw;
-        }
-        
         input[type="text"],
         input[type="password"] {
-            border: 2px solid #d2d9e2;
-            padding: 10px;
-            background: white;
-            border-radius: 6px;
-            width: 250px;
+            width: 40vw;
             height: 40px;
-            margin-top: 10px;
         }
-        
-        span {
-            padding: 0 10px;
-            color: red;
-            font-size: 16px;
-            display: block;
-            max-width: 70%;
-        }
-        
-        @media (min-width: 900px) {
-            .form-page {
-                padding: 0 5%;
-            }
-            #sign-up-page {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .text-boxes {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 2vh 5vw;
-            }
-            .form-cell {
-                margin-bottom: 5px;
-            }
-            input[type="text"],
-            input[type="password"] {
-                width: 40vw;
-                height: 40px;
-            }
-        }
-        /*Success Modal*/
-        
+    }
+    /*Success Modal*/
+    
+    .modal-box {
+        margin: 12vw auto;
+        padding: 15px;
+        background-color: white;
+        font-size: 16px;
+        max-width: 300px;
+        max-height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .circle {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        padding: 12px;
+        margin: 10px 0;
+        background-color: #58a155;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fa-check {
+        font-size: 20px;
+        color: white;
+        padding: 1px;
+    }
+    
+    .modal-box p {
+        text-align: center;
+        max-width: 85%;
+        margin: 20px 0;
+    }
+    
+    #explore-button {
+        padding: 15px;
+        width: 120px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    @media (min-width: 900px) {
         .modal-box {
-            margin: 12vw auto;
-            padding: 15px;
-            background-color: white;
-            font-size: 16px;
-            max-width: 300px;
-            max-height: 300px;
-            border-radius: 10px;
-            box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+            padding: 25px;
+            font-size: 22px;
+            margin: 150px auto;
         }
-        
         .circle {
-            height: 20px;
-            width: 20px;
+            height: 40px;
+            width: 40px;
             border-radius: 50%;
-            padding: 12px;
-            margin: 10px 0;
-            background-color: #58a155;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .fa-check {
-            font-size: 20px;
-            color: white;
-            padding: 1px;
-        }
-        
-        .modal-box p {
-            text-align: center;
-            max-width: 85%;
-            margin: 20px 0;
-        }
-        
-        #explore-button {
             padding: 15px;
-            width: 120px;
-            font-size: 16px;
-            margin-bottom: 0;
+            margin: 10px 0;
         }
-        
-        @media (min-width: 900px) {
-            .modal-box {
-                padding: 25px;
-                font-size: 22px;
-                margin: 150px auto;
-            }
-            .circle {
-                height: 40px;
-                width: 40px;
-                border-radius: 50%;
-                padding: 15px;
-                margin: 10px 0;
-            }
-            #explore-button {
-                margin-top: 15px;
-                padding: 15px;
-                width: 200px;
-                font-size: 22px;
-            }
+        #explore-button {
+            margin-top: 15px;
+            padding: 15px;
+            width: 200px;
+            font-size: 22px;
         }
-        
-        .hidden {
-            display: none;
-        }
+    }
+    
+    .hidden {
+        display: none;
+    }
