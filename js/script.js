@@ -104,10 +104,10 @@ document.getElementById("sign-up-form").addEventListener("submit",
         if (password.value.length < 8) {
             password.focus;
             document.getElementById("error").classList.remove("hidden");
-            // Show an error message on the DOM
+            // Show an error message on the DOM if the password is less than 8 characters
         } else {
             document.getElementById("sign-up-page").setAttribute('style', 'display: none');
-            document.getElementById("success-modal").classList.remove("hidden");
+            document.getElementById("success-modal").classList.remove("hidden"); //Hide form and show confirmation modal
         }
     }
 );
