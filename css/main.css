@@ -125,26 +125,26 @@
         border-radius: 10px;
         box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
         display: none;
-        padding: 5px 0;
+        padding: 15px;
         margin: 0;
         position: absolute;
-        top: 50px;
+        top: 53px;
         z-index: 10;
     }
     
     #beer-menu {
         left: 20px;
-        width: 120px;
+        width: 6.5vw;
     }
     
     #breweries-menu {
         left: 20px;
-        width: 140px;
+        width: 8vw;
     }
     
     #sign-in-menu {
         left: 15px;
-        width: 220px;
+        width: 14vw;
     }
     
     .show {
@@ -448,7 +448,7 @@
         }
         .filter-btn,
         .sort-btn {
-            margin-left: 25px;
+            margin-left: 10px;
         }
         .filter-btn:hover,
         .sort-btn:hover {
@@ -480,7 +480,7 @@
     }
     
     .beer-card h1 {
-        font-size: 5vw;
+        font-size: 22px;
         text-align: left;
         padding: 0 0 0 5px;
         margin-top: 0;
@@ -552,7 +552,6 @@
             width: 160px;
         }
         .beer-card h1 {
-            font-size: 22px;
             text-align: left;
             padding: 0;
             margin: 0;
