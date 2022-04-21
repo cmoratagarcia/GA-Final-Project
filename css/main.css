@@ -19,10 +19,22 @@
     
     .nav-container {
         background-color: #5a6169;
-        padding: 5px 10px;
-        font-size: 1.5vw;
         max-width: 100%;
+        font-size: 18px;
+        padding: 5px 10px;
     }
+    
+    .fa-angle-down {
+        font-size: 16px;
+    }
+    
+    .nav-link {
+        cursor: pointer;
+        color: #d4d6d8;
+        display: block;
+        padding: 0 10px;
+    }
+    /*Mobile navigation*/
     
     .mobile-nav {
         display: flex;
@@ -51,28 +63,17 @@
         display: none;
     }
     
-    .nav-link {
-        cursor: pointer;
-        color: #d4d6d8;
-        display: block;
-        padding: 0 20px;
-    }
-    
     .nav-center,
     .nav-right {
         display: none;
-    }
-    
-    .fa-angle-down {
-        font-size: 1.2vw;
     }
     
     @media (min-width: 900px) {
         .nav-container {
             display: flex;
             align-items: center;
-            justify-content: space-around;
-            padding: 5px 12vw;
+            justify-content: space-between;
+            padding: 5px 8vw;
         }
         .lbe-logo-text {
             display: block;
@@ -89,6 +90,19 @@
         }
         .mobile-nav {
             display: none;
+        }
+    }
+    
+    @media (min-width: 1215px) {
+        .nav-container {
+            font-size: 22px;
+            padding: 5px 12vw;
+        }
+        .fa-angle-down {
+            font-size: 20px;
+        }
+        .nav-link {
+            padding: 0 20px;
         }
     }
     /*Dropdowns*/
@@ -120,26 +134,47 @@
         border-radius: 10px;
         box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
         display: none;
-        padding: 15px;
+        padding: 10px;
         margin: 0;
         position: absolute;
-        top: 53px;
+        top: 44px;
         z-index: 10;
     }
     
     #beer-menu {
-        left: 20px;
-        width: 6.5vw;
+        left: 16px;
+        width: 80px;
+        font-size: 18px;
     }
     
     #breweries-menu {
-        left: 20px;
-        width: 8vw;
+        left: 16px;
+        width: 95px;
+        font-size: 18px;
     }
     
     #sign-in-menu {
-        left: 15px;
-        width: 14vw;
+        left: 12px;
+        width: 120px;
+        font-size: 18px;
+    }
+    
+    @media (min-width: 1400px) {
+        #beer-menu {
+            left: 20px;
+            width: 100px;
+            font-size: 22px;
+        }
+        #breweries-menu {
+            left: 20px;
+            width: 120px;
+            font-size: 22px;
+        }
+        #sign-in-menu {
+            left: 15px;
+            width: 200px;
+            font-size: 22px;
+        }
     }
     
     .show {
