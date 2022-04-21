@@ -5,7 +5,7 @@
     <title>Life is a Beer Expedition</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel='stylesheet' href='https://necolas.github.io/normalize.css'>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -20,11 +20,12 @@
     <!--Header-->
     <header class="nav-container">
         <section class="nav-left">
-            <img class="lbe-logo-text" src="LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo">
+            <a href="./index.html"><img class="lbe-logo-text" src="./LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo"></a>
         </section>
         <section class="mobile-nav">
-            <div class="hamburger-menu-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
-            <div class="logo-container"><img class="lbe-logo-no-text" src="LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2">
+            <div class="hamburger-icon-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
+            <div class="logo-container">
+                <a href="./index.html"><img class="lbe-logo-no-text" src="./LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2"></a>
             </div>
         </section>
 
@@ -58,7 +59,7 @@
 
         <section class="nav-right">
             <div class="dropdown" id="sign-in-dropdown">
-                <a class="nav-link" href="#">Sign in <i class="fas fa-angle-down"></i></a>
+                <a class="nav-link" href="#">Sign In <i class="fas fa-angle-down"></i></a>
                 <aside class="dropdown-menu" id="sign-in-menu">
                     <ul class="menu-item-list">
                         <li><a href="#">Sign In</a></li>
@@ -69,18 +70,19 @@
         </section>
     </header>
     <!--Header END-->
-    <!--Hero Section-->
+
     <main>
+        <!--Hero Section-->
         <section class="hero-container">
             <div class="hero-left-content mobile-container">
                 <h1>Welcome to Life is a Beer Expedition!</h1>
-                <p>Love beer? Love going to breweries? Love talking beer? Well you've come to the right place! Life is a Beer Expedition is the place to learn, share and connect about all things beer with your friends and friends to be.</p>
+                <p>Love beer? Love going to breweries? Love talking beer? Well, you've come to the right place! Life is a Beer Expedition is the place to learn, share and connect about all things beer with your friends and friends to be.</p>
                 <a class="hero-button" href="./sign-up.html">Sign Up Now!</a>
             </div>
-            <div class="hero-right-content"><img src="LBE-Assets/Home-App-Screenshots.png" alt="Mobile app screenshots"></div>
+            <div class="hero-right-content"><img src="./LBE-Assets/Home-App-Screenshots.png" alt="Mobile app screenshots"></div>
         </section>
 
-        <!--Homepage Flavor Selection-->
+        <!--Homepage Beer Profile-->
         <section class="flavor-selection">
             <h2>Get Started</h2>
             <h1>What's your favorite beer profile?</h1>
@@ -88,7 +90,7 @@
             <div class="flavor-cards-container">
                 <!--Dark Beer-->
                 <div class="flavor-card dark">
-                    <img class="beer-glass-icon" src="LBE-Assets/pint-dark.png" alt="Dark beer pint">
+                    <img class="beer-glass-icon" src="./LBE-Assets/pint-dark.png" alt="Dark beer pint">
                     <div class="flavor-details">
                         <div class="text-section">
                             <h3>Dark</h3>
@@ -101,7 +103,7 @@
 
                 <!--Light Beer-->
                 <div class="flavor-card light">
-                    <img class="beer-glass-icon" src="LBE-Assets/pint-light.png" alt="Light beer pint">
+                    <img class="beer-glass-icon" src="./LBE-Assets/pint-light.png" alt="Light beer pint">
                     <div class="flavor-details">
                         <div class="text-section">
                             <h3>Light</h3>
@@ -113,7 +115,7 @@
 
                 <!--Hoppy Beer-->
                 <div class="flavor-card hoppy">
-                    <img class="beer-glass-icon" src="LBE-Assets/pint-hoppy.png" alt="Hoppy beer pint">
+                    <img class="beer-glass-icon" src="./LBE-Assets/pint-hoppy.png" alt="Hoppy beer pint">
                     <div class="flavor-details">
                         <div class="text-section">
                             <h3>Hoppy</h3>
@@ -141,7 +143,7 @@
     <!--Mobile side menu-->
     <aside class="mobile-side-menu" id="side-menu">
         <header class="side-menu-header mobile-header-logo">
-            <img src="LBE-Assets/LBE-Logo-No-Text.png" alt="LBE logo">
+            <img src="./LBE-Assets/LBE-Logo-No-Text.png" alt="LBE logo">
             <i class="fa fa-window-close" id="menu-close"></i>
         </header>
         <div class="side-menu-content">
@@ -172,9 +174,7 @@
                     <li><a href="#">Sign In</a></li>
                     <li><a href="./sign-up.html">Create Account</a></li>
                 </ul>
-
             </div>
-
     </aside>
 
     <script src="js/script.js"></script>

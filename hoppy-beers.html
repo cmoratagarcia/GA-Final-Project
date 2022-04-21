@@ -5,7 +5,7 @@
     <title>LBE - Hoppy Beers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel='stylesheet' href='https://necolas.github.io/normalize.css'>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -14,17 +14,19 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
+
 <body>
 
 
     <!--Header-->
     <header class="nav-container">
         <section class="nav-left">
-            <img class="lbe-logo-text" src="LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo">
+            <a href="./index.html"><img class="lbe-logo-text" src="./LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo"></a>
         </section>
         <section class="mobile-nav">
-            <div class="hamburger-menu-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
-            <div class="logo-container"><img class="lbe-logo-no-text" src="LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2">
+            <div class="hamburger-icon-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
+            <div class="logo-container">
+                <a href="./index.html"><img class="lbe-logo-no-text" src="./LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2"></a>
             </div>
         </section>
 
@@ -58,7 +60,7 @@
 
         <section class="nav-right">
             <div class="dropdown" id="sign-in-dropdown">
-                <a class="nav-link" href="#">Sign in <i class="fas fa-angle-down"></i></a>
+                <a class="nav-link" href="#">Sign In <i class="fas fa-angle-down"></i></a>
                 <aside class="dropdown-menu" id="sign-in-menu">
                     <ul class="menu-item-list">
                         <li><a href="#">Sign In</a></li>
@@ -72,7 +74,7 @@
 
     <!--Beer Cards-->
     <main>
-        <section class="page-box">
+        <section class="page-container">
             <div class="beers-top-content">
                 <h2>Hoppy Beers</h2>
                 <hr>
@@ -85,7 +87,7 @@
             <div class="beer-cards-container">
                 <!--Card 1 - Luppolo-->
                 <div class="beer-card desktop-beer-card">
-                    <img class="beer-pic" src="LBE-Assets/luppolo-ipa-thumb.png" alt="Zest in Show">
+                    <img class="beer-pic" src="./LBE-Assets/luppolo-ipa-thumb.png" alt="Zest in Show">
                     <div class="beer-card-center-content">
                         <h1>Zest in Show Citrus IPA</h1>
                         <p>East Coast IPA with loads of fresh zested orange and grapefruit as well as plenty of west coast hops. Aromas of tropical and citrus fruit lead to flavours of pineapple and tangerine with a zesty finish. Flavourful and refreshing!</p>
@@ -95,7 +97,7 @@
                         </div>
                     </div>
                     <div class="beer-card-details">
-                        <p><a href="https://luppolobrewing.ca/"><i class="far fa-regular fa-compass"></i> Luppolo Brewing Company</a></p>
+                        <p><a href="https://luppolobrewing.ca" target="_blank"><i class="far fa-regular fa-compass"></i> Luppolo Brewing Company</a></p>
                         <p><strong> Alcohol Content</strong>: 5.8% ABV</p>
                         <p><strong>Bitterness</strong>: N/A</p>
                     </div>
@@ -103,14 +105,14 @@
                 <!--Card 1 - Mobile version-->
                 <div class="beer-card mobile-beer-card">
                     <div class="beer-card-top">
-                        <img class="beer-pic" src="LBE-Assets/luppolo-ipa-thumb.png" alt="Zest in Show">
+                        <img class="beer-pic" src="./LBE-Assets/luppolo-ipa-thumb.png" alt="Zest in Show">
                         <h1>Zest in Show Citrus IPA</h1>
                     </div>
                     <div class="beer-card-center-content">
                         <p>East Coast IPA with loads of fresh zested orange and grapefruit as well as plenty of west coast hops. Aromas of tropical and citrus fruit lead to flavours of pineapple and tangerine with a zesty finish. Flavourful and refreshing!</p>
                     </div>
                     <div class="beer-card-details">
-                        <p><a href="https://luppolobrewing.ca/"><i class="far fa-regular fa-compass"></i> Luppolo Brewing Company</a></p>
+                        <p><a href="https://luppolobrewing.ca" target="_blank"><i class="far fa-regular fa-compass"></i> Luppolo Brewing Company</a></p>
                         <p><strong> Alcohol Content</strong>: 5.8% ABV</p>
                         <p><strong>Bitterness</strong>: N/A</p>
                     </div>
@@ -122,7 +124,7 @@
 
                 <!--Card 2 - Faculty-->
                 <div class="beer-card desktop-beer-card">
-                    <img class="beer-pic" src="LBE-Assets/faculty-pale-ale-thumb.png" alt="415 West Coast Pale Ale">
+                    <img class="beer-pic" src="./LBE-Assets/faculty-pale-ale-thumb.png" alt="415 West Coast Pale Ale">
                     <div class="beer-card-center-content">
                         <h1>415 West Coast Pale Ale</h1>
                         <p>The Cascade and Citra hops used in the dry hopping process create subtle pine and grapefruit aromas.</p>
@@ -132,7 +134,7 @@
                         </div>
                     </div>
                     <div class="beer-card-details">
-                        <p><a href="https://brassneck.ca/"><i class="far fa-regular fa-compass"></i> Faculty Brewing</a></p>
+                        <p><a href="https://www.facultybrewing.com" target="_blank"><i class="far fa-regular fa-compass"></i> Faculty Brewing</a></p>
                         <p><strong>Alcohol Content</strong>: 4.8% ABV</p>
                         <p><strong>Bitterness</strong>: 26 IBU</p>
                     </div>
@@ -140,14 +142,14 @@
                 <!--Card 2 - Mobile version-->
                 <div class="beer-card mobile-beer-card">
                     <div class="beer-card-top">
-                        <img class="beer-pic" src="LBE-Assets/faculty-pale-ale-thumb.png" alt="415 West Coast Pale Aler">
+                        <img class="beer-pic" src="./LBE-Assets/faculty-pale-ale-thumb.png" alt="415 West Coast Pale Aler">
                         <h1>415 West Coast Pale Ale</h1>
                     </div>
                     <div class="beer-card-center-content">
                         <p>The Cascade and Citra hops used in the dry hopping process create subtle pine and grapefruit aromas.</p>
                     </div>
                     <div class="beer-card-details">
-                        <p><a href="https://brassneck.ca/"><i class="far fa-regular fa-compass"></i> Faculty Brewing</a></p>
+                        <p><a href="https://www.facultybrewing.com" target="_blank"><i class="far fa-regular fa-compass"></i> Faculty Brewing</a></p>
                         <p><strong>Alcohol Content</strong>: 4.8% ABV</p>
                         <p><strong>Bitterness</strong>: 26 IBU</p>
                     </div>
@@ -159,7 +161,7 @@
 
                 <!--Card 3 - Hypha-->
                 <div class="beer-card desktop-beer-card">
-                    <img class="beer-pic" src="LBE-Assets/hypha-IPA-thumb.png" alt="Hypha Synchrosentient IPA">
+                    <img class="beer-pic" src="./LBE-Assets/hypha-IPA-thumb.png" alt="Hypha Synchrosentient IPA">
                     <div class="beer-card-center-content">
                         <h1>Hypha Synchrosentient IPA</h1>
                         <p>Synchrosentient IPA is a double-dry hopped Northeast style IPA with a hop blend of Strata and Citra hops. Expect notes of strawberry, citrus, and passionfruit.</p>
@@ -169,7 +171,7 @@
                         </div>
                     </div>
                     <div class="beer-card-details">
-                        <p><a href="https://luppolobrewing.ca/"><i class="far fa-regular fa-compass"></i> Hypha Project</a></p>
+                        <p><a href="https://www.hyphaproject.com" target="_blank"><i class="far fa-regular fa-compass"></i> Hypha Project</a></p>
                         <p><strong>Alcohol Content</strong>: 6.5% ABV</p>
                         <p><strong>Bitterness</strong>: 58 IBU</p>
                     </div>
@@ -177,14 +179,14 @@
                 <!--Card 3 - Mobile version-->
                 <div class="beer-card mobile-beer-card">
                     <div class="beer-card-top">
-                        <img class="beer-pic" src="LBE-Assets/hypha-IPA-thumb.png" alt="Hypha Synchrosentient IPA">
+                        <img class="beer-pic" src="./LBE-Assets/hypha-IPA-thumb.png" alt="Hypha Synchrosentient IPA">
                         <h1>Hypha Synchrosentient IPA</h1>
                     </div>
                     <div class="beer-card-center-content">
                         <p>Synchrosentient IPA is a double-dry hopped Northeast style IPA with a hop blend of Strata and Citra hops. Expect notes of strawberry, citrus, and passionfruit.</p>
                     </div>
                     <div class="beer-card-details">
-                        <p><a href="https://luppolobrewing.ca/"><i class="far fa-regular fa-compass"></i> Hypha Project</a></p>
+                        <p><a href="https://www.hyphaproject.com" target="_blank"><i class="far fa-regular fa-compass"></i> Hypha Project</a></p>
                         <p><strong>Alcohol Content</strong>: 6.5% ABV</p>
                         <p><strong>Bitterness</strong>: 58 IBU</p>
                     </div>
@@ -218,7 +220,7 @@
     <!--Mobile side menu-->
     <aside class="mobile-side-menu" id="side-menu">
         <header class="side-menu-header mobile-header-logo">
-            <img src="LBE-Assets/LBE-Logo-No-Text.png" alt="LBE logo">
+            <img src="./LBE-Assets/LBE-Logo-No-Text.png" alt="LBE logo">
             <i class="fa fa-window-close" id="menu-close"></i>
         </header>
         <div class="side-menu-content">
@@ -249,9 +251,7 @@
                     <li><a href="#">Sign In</a></li>
                     <li><a href="./sign-up.html">Create Account</a></li>
                 </ul>
-
             </div>
-
     </aside>
 
     <script src="js/script.js"></script>

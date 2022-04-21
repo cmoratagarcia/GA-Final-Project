@@ -1,5 +1,4 @@
-/*Dropdown Menus.
-Show menu 1 (Beers) and hide the other 2*/
+/*Dropdown Menus*/
 
 let beerDropdown = document.getElementById("beer-dropdown");
 let breweriesDropdown = document.getElementById("breweries-dropdown");
@@ -9,7 +8,7 @@ let beerMenu = document.getElementById("beer-menu");
 let breweriesMenu = document.getElementById("breweries-menu");
 let signInMenu = document.getElementById("sign-in-menu");
 
-
+/*Show menu 1 (Beers) and hide the other 2*/
 beerDropdown.addEventListener("mouseover", function() {
     beerMenu.classList.add("show");
     breweriesMenu.classList.remove("show");
@@ -51,7 +50,7 @@ document.getElementById("hamburger-menu").addEventListener("click", function() {
     document.getElementById("side-menu").classList.add("mobile-show-menu");
 })
 
-/* When you click the X, it hides the menu*/
+/* When you click on the X, it hides the menu*/
 document.getElementById("menu-close").addEventListener("click", function() {
     document.getElementById("side-menu").classList.remove("mobile-show-menu");
 })
@@ -102,7 +101,6 @@ document.getElementById("sign-up-form").addEventListener("submit",
         let password = document.getElementById("password");
 
         if (password.value.length < 8) {
-            password.focus;
             document.getElementById("error").classList.remove("hidden");
             // Show an error message on the DOM if the password is less than 8 characters
         } else {

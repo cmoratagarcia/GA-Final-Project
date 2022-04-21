@@ -5,7 +5,7 @@
     <title>LBE - Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel='stylesheet' href='https://necolas.github.io/normalize.css'>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -14,17 +14,19 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
+
 <body>
     <main>
 
         <!--Header-->
         <header class="nav-container">
             <section class="nav-left">
-                <img class="lbe-logo-text" src="LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo">
+                <a href="./index.html"><img class="lbe-logo-text" src="./LBE-Assets/LBE-Logo-with-Text.png" alt="Life is a Beer Expedition logo"></a>
             </section>
             <section class="mobile-nav">
-                <div class="hamburger-menu-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
-                <div class="logo-container"><img class="lbe-logo-no-text" src="LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2">
+                <div class="hamburger-icon-container"><i class="fas fa-solid fa-bars" id="hamburger-menu"></i></div>
+                <div class="logo-container">
+                    <a href="./index.html"><img class="lbe-logo-no-text" src="./LBE-Assets/LBE-Logo-No-Text.png" alt="Life is a Beer Expedition logo 2"></a>
                 </div>
             </section>
 
@@ -58,7 +60,7 @@
 
             <section class="nav-right">
                 <div class="dropdown" id="sign-in-dropdown">
-                    <a class="nav-link" href="#">Sign in <i class="fas fa-angle-down"></i></a>
+                    <a class="nav-link" href="#">Sign In <i class="fas fa-angle-down"></i></a>
                     <aside class="dropdown-menu" id="sign-in-menu">
                         <ul class="menu-item-list">
                             <li><a href="#">Sign In</a></li>
@@ -72,7 +74,7 @@
 
 
         <!--Form-->
-        <main class="page-box form-page">
+        <main class="page-container form-page">
             <section id="sign-up-page">
                 <div class="form-top-content">
                     <h2>Sign Up</h2>
@@ -97,7 +99,6 @@
                             <input type="password" id="password" placeholder="Password" required>
                             <span id="error" class="hidden">Password must be at least 8 characters long.</span>
                         </div>
-
                         <div class="form-cell">
                             <label for="country">Country</label>
                             <input type="text" id="country" placeholder="Country">
@@ -107,19 +108,21 @@
                     <div class="submit">
                         <input class="submit-button" type="submit" value="Submit Form">
                     </div>
-
-
                 </form>
             </section>
-            <!--Success Modal-->
-            <aside>
-                <div class="modal-box hidden" id="success-modal">
-                    <div class="circle"><i class="fa fa-check" aria-hidden="true"></i></div>
-                    <p>Your account was created successfully!</p>
-                    <a class="flavor-select-button" id="explore-button" href="./index.html">Start Exploring</a>
-                </div>
-            </aside>
         </main>
+
+        <!--Success Modal-->
+        <aside>
+            <div class="modal-box hidden" id="success-modal">
+                <div class="circle"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <p>Your account was created successfully!</p>
+                <a class="flavor-select-button" id="explore-button" href="./index.html">Start Exploring</a>
+            </div>
+        </aside>
+
+
+
         <!--Footer-->
         <footer>
             <div class="copyright-container">
@@ -135,7 +138,7 @@
         <!--Mobile side menu-->
         <aside class="mobile-side-menu" id="side-menu">
             <header class="side-menu-header mobile-header-logo">
-                <img src="LBE-Assets/LBE-Logo-No-Text.png" alt="LBE logo">
+                <img src="./LBE-Assets/LBE-Logo-No-Text.png" alt="LBE logo">
                 <i class="fa fa-window-close" id="menu-close"></i>
             </header>
             <div class="side-menu-content">

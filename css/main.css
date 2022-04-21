@@ -44,6 +44,7 @@
     .lbe-logo-no-text {
         display: block;
         padding: 10px;
+        cursor: pointer;
     }
     
     .lbe-logo-text {
@@ -55,10 +56,6 @@
         color: #d4d6d8;
         display: block;
         padding: 0 20px;
-    }
-    
-    .nav-link:focus {
-        color: #e5b76b;
     }
     
     .nav-center,
@@ -75,10 +72,11 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            padding: 5px 10%;
+            padding: 5px 12vw;
         }
         .lbe-logo-text {
             display: block;
+            cursor: pointer;
         }
         .nav-center {
             display: flex;
@@ -97,6 +95,7 @@
     
     .dropdown {
         position: relative;
+        padding: 10px;
     }
     
     .menu-item-list {
@@ -108,16 +107,12 @@
     .menu-item-list a {
         cursor: pointer;
         color: #e5b76b;
-        margin: 0 0 3px 0;
+        margin: 0;
         padding: 0 10px;
     }
     
     .menu-item-list li:hover {
         text-decoration: underline;
-    }
-    
-    .dropdown {
-        padding: 10px;
     }
     
     .dropdown-menu {
@@ -156,7 +151,7 @@
         color: #ffffff;
         background-image: url(../LBE-Assets/Hero-Background.png);
         background-size: cover;
-        height: 900px;
+        height: 850px;
         text-align: center;
         max-width: 100%;
         padding-left: 20px;
@@ -164,7 +159,7 @@
     }
     
     .hero-container div {
-        padding: 4vh;
+        padding: 4vw;
     }
     
     .mobile-container {
@@ -189,10 +184,9 @@
         color: #e5b76b;
         background-color: #ffffff;
         font-size: 22px;
-        border: none;
         border-radius: 5px;
         padding: 10px;
-        margin-top: 15px;
+        margin-top: 25px;
         transition: 0.3s ease-in-out;
         cursor: pointer;
         text-align: center;
@@ -239,7 +233,7 @@
             margin-top: 40px;
         }
     }
-    /*Flavor Selection*/
+    /*Homepage Flavor Selection*/
     
     .flavor-selection {
         background-color: #ffffff;
@@ -265,7 +259,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 100px;
+        margin-bottom: 18vh;
     }
     
     .flavor-card {
@@ -296,8 +290,8 @@
         color: #ffffff;
         background-color: #d18200;
         font-size: 22px;
-        border: none;
         border-radius: 5px;
+        border: none;
         padding: 15px;
         margin-bottom: 50px;
         transition: 0.3s ease-in-out;
@@ -317,7 +311,7 @@
     
     @media (min-width: 900px) {
         .flavor-selection {
-            padding: 5vw;
+            padding: 4.5vw;
         }
         .flavor-selection h2 {
             font-size: 40px;
@@ -344,7 +338,7 @@
         }
         .flavor-details {
             padding: 0 2vw;
-            max-width: 250px;
+            max-width: auto;
             min-height: 350px;
             font-size: 20px;
             display: flex;
@@ -352,7 +346,7 @@
             justify-content: space-between;
         }
         .flavor-select-button {
-            width: 200px;
+            max-width: 12vw;
             font-size: 22px;
             margin-bottom: 25px;
         }
@@ -410,7 +404,7 @@
         justify-content: center;
     }
     
-    .page-box h2 {
+    .page-container h2 {
         text-align: center;
         font-size: 45px;
         margin-bottom: 5px;
@@ -434,13 +428,13 @@
         .mobile {
             display: none;
         }
-        .page-box {
+        .page-container {
             padding: 2vh 12vw;
         }
-        .page-box h2 {
+        .page-container h2 {
             text-align: left;
         }
-        .page-box hr {
+        .page-container hr {
             margin-left: 0;
         }
         .filter-buttons {
@@ -458,11 +452,9 @@
     }
     
     .beer-card {
-        display: flex;
-        flex-direction: column;
         background-color: #ffffff;
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-        margin: 40px 0;
+        margin: 45px 0;
         padding: 30px;
     }
     
@@ -482,12 +474,12 @@
     .beer-card h1 {
         font-size: 22px;
         text-align: left;
-        padding: 0 0 0 5px;
+        padding-left: 0 0 0 5px;
         margin-top: 0;
     }
     
     .beer-card p {
-        font-size: 16px;
+        font-size: 18px;
         color: #5a6169;
         margin: 5px;
     }
@@ -542,7 +534,6 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
-            padding-bottom: 5px;
             margin-bottom: 45px;
             border-radius: 10px;
             padding: 20px;
@@ -557,12 +548,11 @@
             margin: 0;
         }
         .beer-card p {
-            font-size: 18px;
             padding: 0;
             margin: 10px 0;
         }
         .beer-card-center-content {
-            width: 55vw;
+            width: 53vw;
             text-align: left;
             margin-left: 20px;
             margin-right: 5px;
@@ -623,7 +613,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 2;
+        z-index: 10;
         background-color: #d18200;
         cursor: pointer;
         opacity: 0;
@@ -681,11 +671,6 @@
     }
     /*Sign-up Page*/
     
-    #sign-up-page {
-        padding-top: 15px;
-        margin: 15px auto;
-    }
-    
     .form-top-content,
     .form-cell {
         margin-top: 10px;
@@ -708,7 +693,7 @@
     }
     
     .submit-button {
-        margin-top: 35px;
+        margin-top: 40px;
         margin-bottom: 15vw;
     }
     
@@ -731,9 +716,6 @@
     }
     
     @media (min-width: 900px) {
-        .form-page {
-            padding: 0 5%;
-        }
         #sign-up-form,
         .form-cell {
             display: flex;
@@ -743,7 +725,8 @@
         .text-boxes {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 2vh 5vw;
+            gap: 2vh 3vw;
+            align-items: flex-start;
         }
         .form-cell {
             margin-bottom: 5px;
@@ -751,19 +734,19 @@
         }
         input[type="text"],
         input[type="password"] {
-            width: 40vw;
+            width: 35vw;
             height: 40px;
         }
     }
     /*Success Modal*/
     
     .modal-box {
-        margin: 12vw auto;
+        margin: 8vw auto;
         padding: 15px;
         background-color: white;
         font-size: 16px;
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 250px;
+        max-height: 250px;
         border-radius: 10px;
         box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
         display: flex;
@@ -797,7 +780,7 @@
     }
     
     #explore-button {
-        padding: 15px;
+        padding: 10px;
         width: 120px;
         font-size: 16px;
         margin-bottom: 0;
@@ -805,9 +788,11 @@
     
     @media (min-width: 900px) {
         .modal-box {
-            padding: 25px;
+            padding: 20px;
             font-size: 22px;
-            margin: 150px auto;
+            max-width: 900px;
+            width: 350px;
+            height: 300px;
         }
         .circle {
             height: 40px;
@@ -818,8 +803,7 @@
         }
         #explore-button {
             margin-top: 15px;
-            padding: 15px;
-            width: 200px;
+            min-width: 180px;
             font-size: 22px;
         }
     }
