@@ -112,7 +112,7 @@
         padding: 10px;
     }
     
-    .menu-item-list {
+    .menu-item-list ul {
         list-style: none;
         margin: 0;
         padding: 0;
@@ -509,7 +509,7 @@
     .beer-card h1 {
         font-size: 22px;
         text-align: left;
-        padding-left: 0 0 0 5px;
+        padding: 0 0 0 5px;
         margin-top: 0;
     }
     

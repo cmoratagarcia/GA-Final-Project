@@ -36,23 +36,27 @@
                     <a class="nav-link" href="#">Beers <i class="fas fa-angle-down"></i></a>
                     <!--Dropdowns-->
                     <aside class="dropdown-menu" id="beer-menu">
-                        <ul class="menu-item-list">
-                            <li><a href="./dark-beers.html">Dark</a></li>
-                            <li><a href="./light-beers.html">Light</a></li>
-                            <li><a href="./hoppy-beers.html">Hoppy</a></li>
-                            <li><a href="#">Other</a></li>
-                            <li><a href="#">Search</a></li>
-                        </ul>
+                        <nav class="menu-item-list">
+                            <ul>
+                                <li><a href="./dark-beers.html">Dark</a></li>
+                                <li><a href="./light-beers.html">Light</a></li>
+                                <li><a href="./hoppy-beers.html">Hoppy</a></li>
+                                <li><a href="#">Other</a></li>
+                                <li><a href="#">Search</a></li>
+                            </ul>
+                        </nav>
                     </aside>
                 </div>
                 <div class="dropdown" id="breweries-dropdown">
                     <a class="nav-link" href="#">Breweries <i class="fas fa-angle-down"></i></a>
                     <aside class="dropdown-menu" id="breweries-menu">
-                        <ul class="menu-item-list">
-                            <li><a href="#">Near Me</a></li>
-                            <li><a href="#">Map</a></li>
-                            <li><a href="#">Search</a></li>
-                        </ul>
+                        <nav class="menu-item-list">
+                            <ul>
+                                <li><a href="#">Near Me</a></li>
+                                <li><a href="#">Map</a></li>
+                                <li><a href="#">Search</a></li>
+                            </ul>
+                        </nav>
                     </aside>
                 </div>
                 <a class="nav-link" href="#">Expeditions</a>
@@ -62,10 +66,12 @@
                 <div class="dropdown" id="sign-in-dropdown">
                     <a class="nav-link" href="#">Sign In <i class="fas fa-angle-down"></i></a>
                     <aside class="dropdown-menu" id="sign-in-menu">
-                        <ul class="menu-item-list">
-                            <li><a href="#">Sign In</a></li>
-                            <li><a href="./sign-up.html">Create Account</a></li>
-                        </ul>
+                        <nav class="menu-item-list">
+                            <ul>
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="./sign-up.html">Create Account</a></li>
+                            </ul>
+                        </nav>
                     </aside>
                 </div>
             </section>
@@ -74,7 +80,7 @@
 
 
         <!--Form-->
-        <main class="page-container form-page">
+        <div class="page-container form-page">
             <section id="sign-up-page">
                 <div class="form-top-content">
                     <h2>Sign Up</h2>
@@ -103,14 +109,13 @@
                             <label for="country">Country</label>
                             <input type="text" id="country" placeholder="Country">
                         </div>
-
                     </div>
                     <div class="submit">
                         <input class="submit-button" type="submit" value="Submit Form">
                     </div>
                 </form>
             </section>
-        </main>
+        </div>
 
         <!--Success Modal-->
         <aside>
@@ -160,7 +165,6 @@
                         <li><a href="#">Map</a></li>
                         <li><a href="#">Search</a></li>
                     </ul>
-
                 </div>
                 <a class="mobile-dropdown" href="#">Expeditions</a>
                 <div class="mobile-dropdown" id="mobile-sign-in-dropdown">
@@ -169,13 +173,12 @@
                         <li><a href="#">Sign In</a></li>
                         <li><a href="./sign-up.html">Create Account</a></li>
                     </ul>
-
                 </div>
-
+            </div>
         </aside>
 
         <script src="js/script.js"></script>
-
+    </main>
 </body>
 
 </html>
